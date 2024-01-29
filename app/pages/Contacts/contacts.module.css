@@ -1,0 +1,87 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    gap: 10px;
+    padding: 1.25rem;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    gap: 5px;
+}
+.container h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.blocksContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.block{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.underBlock{
+    display: flex;
+    gap: 10px;
+}
+.underBlock button{
+    cursor: pointer;
+}
+.successMessage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2ed06c;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.wrapper :nth-child(1) .block{
+    background-color: #24292e;
+}
+.wrapper:nth-child(2) .block{
+    background-color: #f15656;
+}
+.wrapper:nth-child(3) .block{
+    background-color: #2ed06c;
+}
+.wrapper:nth-child(4) .block{
+    background-color: #33a7e0;
+}
+.wrapper:nth-child(5) .block{
+    background-color: #0865b4;
+}
+.wrapper:nth-child(6) .block{
+    background-color: #d38f44;
+}
+
+@media (max-width: 990px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей,
+    но больше 770 пикселей.
+    Эти стили подойдут для некоторых мобильных устройств и планшетов
+    */
+}
+
+@media (max-width: 400px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+
+    /*.blocksContainer{*/
+    /*    grid-template-columns: repeat(1, 1fr);*/
+    /*}*/
+}

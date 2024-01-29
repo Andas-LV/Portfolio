@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 1.25rem;
+    color: white;
+    max-width: 100%;
+    padding: 1.25rem;
+    text-align: justify;
+}
+.container p{
+    font-size: 16px;
+    font-weight: 400;
+}

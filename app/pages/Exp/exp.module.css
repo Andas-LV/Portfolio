@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    gap: 10px;
+    padding: 1.25rem;
+}
+.container h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+/*BLOCK*/
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border-radius: 5px;
+    padding: 20px;
+}
+.block:hover{
+    background-color: #262626;
+    box-shadow: 0 0 1px #fff;
+}
+.company{
+    font-size: 20px;
+    font-weight: 500;
+}
+.title{
+    font-size: 16px;
+    font-weight:400;
+}
+.text{
+    gap: 1.25rem;
+    font-size: 1rem;
+    color: #cbd5e0;
+}
+.skillsContainer{
+    display: flex;
+    gap: 20px;
+}
+.skill{
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    background-color: #2b2d30;
+    color: #b88e68;
+}
+.skill:hover{
+    background-color: tan;
+    color: black;
+}
+
+@media (max-width: 400px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+
+    .skillsContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
