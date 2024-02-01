@@ -11,4 +11,12 @@
 .container p{
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.5;
+}
+.container p span{
+    background-color: black;
+    color: #00a3a8;
+    padding: 4px;
+    border-radius: 3px;
+    border: 1px solid white;
 }

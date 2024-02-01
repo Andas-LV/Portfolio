@@ -52,11 +52,6 @@
 }
 
 @media (max-width: 400px) {
-    /*
-    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
-    Это множество мобильных устройств
-    */
-
     .skillsContainer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);

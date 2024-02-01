@@ -15,11 +15,23 @@
     width:30vw;
     padding: 1.25rem;
 }
+.headerContent nav{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 .navItems{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     cursor: pointer;
+}
+.navItems li{
+    padding: 10px;
+    border-radius: 5px;
+}
+.navItems li:hover{
+    background-color: #333;
 }
 .container{
     display: flex;
@@ -29,12 +41,13 @@
     margin: 50px 0 0 30vw;
 }
 
-@media (max-width: 990px) {
-    /*
-    Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей,
-    но больше 770 пикселей.
-    Эти стили подойдут для некоторых мобильных устройств и планшетов
-    */
+.mainInfo h2{
+    font-size: 4.5rem;
+    color: #b88e68;
+}
+.mainInfo p{
+    font-size: 1.5rem;
+    color: #b2b2b2;
 }
 
 @media (max-width: 770px) {
@@ -50,17 +63,12 @@
         height: 100%;
         width: 100%;
     }
+    .headerContent nav{
+        gap: 20px;
+    }
     .navItems{
         display:none;
     }
-    /*
-    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
-    Это множество мобильных устройств
-    */
-
-    /*.blocksContainer{*/
-    /*    grid-template-columns: repeat(1, 1fr);*/
-    /*}*/
 }
 
 /*Chat*/

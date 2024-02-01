@@ -11,12 +11,13 @@ export const Header = () => {
         element?.scrollIntoView({ behavior: 'smooth' });
     }
 
+
     return (
         <header className={styles.header}>
             <div className={styles.headerContent}>
                 <nav>
                     <div className={styles.mainInfo}>
-                        <h2>Andas</h2>
+                        <h2>ANDAS</h2>
                         <p>Frontend developer</p>
                     </div>
                     <ul className={styles.navItems}>
