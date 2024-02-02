@@ -32,27 +32,30 @@ export const Projects: React.FC = () => {
         <div className={styles.container}>
             <h2>Projects</h2>
             <ProjectBlock
-                title="Project Title"
+                title="Simple-Design"
                 imgPath="/simple-design.png"
                 linkPath="https://simple-design-one.vercel.app/"
                 github="https://github.com/Andas-LV/simple-design.git"
-                description="Sure! Life is like a complex algorithm, full of unpredictable loops and conditional statements. Just as in coding, where bugs can be both frustrating and enlightening, real-life challenges shape us. Embrace the unexpected, debug your path, and enjoy the beautiful chaos of existence. After all, every bug is an opportunity to learn and grow."
+                description="I found some good layout desing in the internet.
+                I think I can use them for my big project.
+                I am proud of my work. I have made it a habit that with every new project. I wil also learn and immediately aplly a new stack.
+                In that case I used new stacks for me like Node js, React libs and etc"
             />
 
             <ProjectBlock
-                title="Project Title"
+                title="Chatbot"
                 imgPath="/chatbot.png"
                 linkPath="https://chatbot-git-main-andas-projects-e016e5fa.vercel.app/"
                 github="https://github.com/Andas-LV/Chatbot.git"
-                description="Sure! Life is like a complex algorithm, full of unpredictable loops and conditional statements. Just as in coding, where bugs can be both frustrating and enlightening, real-life challenges shape us. Embrace the unexpected, debug your path, and enjoy the beautiful chaos of existence. After all, every bug is an opportunity to learn and grow."
+                description="I used API of Gemini. That is Google's AI. This is core of the 'Bard AI' I made a chatbot with it."
             />
 
             <ProjectBlock
-                title="Project Title"
-                imgPath="/currency.png"
-                linkPath="https://currency-sand.vercel.app/"
-                github="https://github.com/Andas-LV/TZ.git"
-                description="Sure! Life is like a complex algorithm, full of unpredictable loops and conditional statements. Just as in coding, where bugs can be both frustrating and enlightening, real-life challenges shape us. Embrace the unexpected, debug your path, and enjoy the beautiful chaos of existence. After all, every bug is an opportunity to learn and grow."
+                title="Drinks"
+                imgPath="/drinks.png"
+                linkPath="https://drinks-omega.vercel.app/"
+                github="https://github.com/Andas-LV/Drinks.git"
+                description="That was a pretty simple project in perspective of the size and like a said, i used a new stack. In this case this is Vue 3, Pinia and SCSS. Also a used a free API from internet"
             />
         </div>
     );

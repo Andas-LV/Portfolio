@@ -47,12 +47,12 @@ export const Contacts: React.FC = () => {
         <div className={styles.container}>
             <h2>Contacts</h2>
             <div className={styles.blocksContainer}>
-                <Contact icon={<SiGithub />} name="GitHub" value="github.com" />
-                <Contact icon={<SiGmail />} name="Gmail" value="pH2Z3@example.com" />
-                <Contact icon={<SiWhatsapp />} name="WhatsApp" value="whatsapp.com" />
-                <Contact icon={<SiTelegram />} name="Telegram" value="telegram.me" />
+                <Contact icon={<SiGithub />} name="GitHub" value="https://github.com/Andas-LV" />
+                <Contact icon={<SiGmail />} name="Gmail" value="andassatybaldy@gmail.com" />
+                <Contact icon={<SiWhatsapp />} name="WhatsApp" value="+7 707 490 91 31" />
+                <Contact icon={<SiTelegram />} name="Telegram" value="https://t.me/Andas10" />
                 <Contact icon={<AiOutlinePhone />} name="Phone" value="+7 707 490 91 31" />
-                <Contact icon={<FaHouseChimney />} name="Address" value="address" />
+                <Contact icon={<FaHouseChimney />} name="Address" value="Astana, Kazakhstan" />
             </div>
         </div>
     );

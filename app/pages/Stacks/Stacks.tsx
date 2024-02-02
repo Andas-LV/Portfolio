@@ -7,6 +7,8 @@ import styles from './stacks.module.css';
 export const Stacks = () => {
     return (
         <div className={styles.container}>
+            <h1 className={styles.title}>My Stacks</h1>
+
             <div className={`${styles.skillBlock} ${styles.blue}`}>
                 <SiTypescript className={styles.icon} />
                 <Slider skill={"Typescript"} level={70} />
