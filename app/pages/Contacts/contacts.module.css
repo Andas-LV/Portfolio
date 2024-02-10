@@ -48,6 +48,11 @@
     z-index: 1000;
 }
 
+.value{
+    width: 100%;
+    overflow: hidden;
+}
+
 .wrapper :nth-child(1) .block{
     background-color: #24292e;
 }
