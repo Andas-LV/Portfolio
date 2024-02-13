@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "start-server": "nodemon api/server.js"
+    "start": "next start"
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.3",
