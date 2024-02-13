@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import {Gothic_A1} from 'next/font/google'
 import './globals.css'
 import React from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 const yoGothic = Gothic_A1({ subsets: ['latin'], weight : ['400', "500", "600", "700"] })
 
@@ -17,7 +18,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" suppressHydrationWarning={true}>
-        <body className={yoGothic.className}>{children}</body>
+        <body className={yoGothic.className}>
+            {children}
+            <Analytics />
+        </body>
         </html>
     )
 }
