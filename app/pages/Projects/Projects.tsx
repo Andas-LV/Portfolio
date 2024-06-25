@@ -51,11 +51,11 @@ export const Projects: React.FC = () => {
             />
 
             <ProjectBlock
-                title="Drinks"
-                imgPath="/drinks.png"
-                linkPath="https://drinks-omega.vercel.app/"
-                github="https://github.com/Andas-LV/Drinks.git"
-                description="That was a pretty simple project in perspective of the size and like a said, i used a new stack. In this case this is Vue 3, Pinia and SCSS. Also a used a free API from internet"
+                title="Travellian"
+                imgPath="/travellian.png"
+                linkPath="https://travel-agency-five-iota.vercel.app/"
+                github="https://github.com/Andas-LV/Travel-Agency"
+                description="That was a pretty simple project in perspective of the size and like a said, i used a new stack. In this case this is Next js and Next-Auth."
             />
         </div>
     );

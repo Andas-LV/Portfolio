@@ -34,12 +34,19 @@ export const Exp = () => {
 
     return (
         <div className={styles.container}>
-            <h2>Experience: 1 year 7 months</h2>
+            <h2>Experience: 2 years and 2 months</h2>
+            <Block
+                company={'Dzhandosov Soft'}
+                title={'Front-end developer'}
+                date={'December 2023 - May 2024'}
+                text={'I was responsible for the development of full front-end software. We was creating a special application.Featuring stacks like Vue, Pinia, Nuxt js, Typescript and others. '}
+                skills={['React', 'Vue 3', 'TypeScript']}
+            />
             <Block
                 company={'AIU'}
                 title={'Frontend developer'}
-                date={'September 2022 - April 2024'}
-                text={'I was responsible for the development for internal software. Last year, I delved into various stacks and libraries such as Next.js, Vue, Electron, Redux Toolkit, React-Select, React-Query and others. I have completed numerous projects using these technologies.'}
+                date={'March 2022 - December 2023'}
+                text={'. Last year, I delved into various stacks and libraries such as Next.js, Vue, Electron, Redux Toolkit, React-Select, React-Query and others. I have completed numerous projects using these technologies.'}
                 skills={['Next.js', 'Redux', 'Vue 3']}
             />
 
