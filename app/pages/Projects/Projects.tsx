@@ -32,6 +32,14 @@ export const Projects: React.FC = () => {
         <div className={styles.container}>
             <h2>Projects</h2>
             <ProjectBlock
+                title="Qorgau"
+                imgPath="/qorgau.png"
+                linkPath="https://qorgau-city.kz/map/"
+                github="NDA"
+                description="This is a Fire resistance project. I used a stacks like Vue js, Pinia, Nuxt js, Vuetify, google_map and etc."
+            />
+
+            <ProjectBlock
                 title="Simple-Design"
                 imgPath="/simple-design.png"
                 linkPath="https://simple-design-one.vercel.app/"
@@ -40,14 +48,6 @@ export const Projects: React.FC = () => {
                 I think I can use them for my big project.
                 I am proud of my work. I have made it a habit that with every new project. I wil also learn and immediately aplly a new stack.
                 In that case I used new stacks for me like Node js, React libs and etc"
-            />
-
-            <ProjectBlock
-                title="Chatbot"
-                imgPath="/chatbot.png"
-                linkPath="https://chatbot-git-main-andas-projects-e016e5fa.vercel.app/"
-                github="https://github.com/Andas-LV/Chatbot.git"
-                description="I used API of Gemini. That is Google's AI. This is core of the 'Bard AI' I made a chatbot with it."
             />
 
             <ProjectBlock

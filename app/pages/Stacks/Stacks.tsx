@@ -11,7 +11,7 @@ export const Stacks = () => {
 
             <div className={`${styles.skillBlock} ${styles.blue}`}>
                 <SiTypescript className={styles.icon} />
-                <Slider skill={"Typescript"} level={70} />
+                <Slider skill={"Typescript"} level={90} />
             </div>
 
             <div className={`${styles.skillBlock} ${styles.yellow}`}>
@@ -26,7 +26,7 @@ export const Stacks = () => {
 
             <div className={`${styles.skillBlock} ${styles.green}`}>
                 <SiVuedotjs className={styles.icon} />
-                <Slider skill={"Vue.js"} level={60} />
+                <Slider skill={"Vue.js"} level={100} />
             </div>
 
             <div className={`${styles.skillBlock} ${styles.black}`}>
