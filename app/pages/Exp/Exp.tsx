@@ -31,10 +31,19 @@ export const Exp = () => {
         );
     };
 
-
     return (
         <div className={styles.container}>
-            <h2>Experience: 2 years and 2 months</h2>
+            <h2>Experience: 2 years and 6 months</h2>
+            <Block
+                company={'cNomad'}
+                title={'Front-end developer'}
+                date={'June 2024 - Present'}
+                text={
+                  'I was responsible for the development of full front-end software.' +
+                  'We was creating a Fire security application.Featuring stacks like Vue, Typescript, Pinia, Vuetify, google_map and others. '
+                }
+                skills={['Vue', 'Pinia', 'TypeScript']}
+            />
             <Block
                 company={'Dzhandosov Soft'}
                 title={'Front-end developer'}
@@ -46,16 +55,8 @@ export const Exp = () => {
                 company={'AIU'}
                 title={'Frontend developer'}
                 date={'March 2022 - December 2023'}
-                text={'. Last year, I delved into various stacks and libraries such as Next.js, Vue, Electron, Redux Toolkit, React-Select, React-Query and others. I have completed numerous projects using these technologies.'}
+                text={'Last year, I delved into various stacks and libraries such as Next.js, Vue, Electron, Redux Toolkit, React-Select, React-Query and others. I have completed numerous projects using these technologies.'}
                 skills={['Next.js', 'Redux', 'Vue 3']}
-            />
-
-            <Block
-                company={'Hakaton(AITU)'}
-                title={'Front-end developer'}
-                date={'November 2023'}
-                text={'Our team is in the top 10. I was responsible for the development of layouts in Figma.Responsible for developing front-end applications and helped for backend devs.'}
-                skills={['React', 'Node js', 'TypeScript']}
             />
         </div>
     )
