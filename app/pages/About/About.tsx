@@ -14,7 +14,8 @@ export const About = () => {
                 My skills include front-end development technologies such
                 as <span>TypeScript</span>, <span>JavaScript</span>
                 , <span>React</span> and <span>Vue</span>,
-                and i am constantly exploring more skills and frameworks to complete your own technology stack.
+                and back-end development technologies such
+                as  <span>Python</span>, <span>Django REST</span> and <span>Node JS</span>, i am constantly exploring more skills and frameworks to complete your own technology stack.
             </p>
 
             <p>

@@ -33,11 +33,21 @@ export const Exp = () => {
 
     return (
         <div className={styles.container}>
-            <h2>Experience: 2 years and 6 months</h2>
+            <h2>Experience: 2 years +</h2>
+            <Block
+                company={'ZIZ INC.'}
+                title={'Front-end developer'}
+                date={'January 2025 - Present'}
+                text={
+                    'I am responsible for the development of front-end software.' +
+                    'We are creating a different projects like marketplaces, landings etc. '
+                }
+                skills={['Vue', 'Pinia', 'TypeScript']}
+            />
             <Block
                 company={'cNomad'}
                 title={'Front-end developer'}
-                date={'June 2024 - Present'}
+                date={'June 2024 - October 2024'}
                 text={
                   'I was responsible for the development of full front-end software.' +
                   'We was creating a Fire security application.Featuring stacks like Vue, Typescript, Pinia, Vuetify, google_map and others. '
@@ -46,17 +56,10 @@ export const Exp = () => {
             />
             <Block
                 company={'Dzhandosov Soft'}
-                title={'Front-end developer'}
+                title={'Fullstack developer'}
                 date={'December 2023 - May 2024'}
                 text={'I was responsible for the development of full front-end software. We was creating a special application.Featuring stacks like Vue, Pinia, Nuxt js, Typescript and others. '}
-                skills={['React', 'Vue 3', 'TypeScript']}
-            />
-            <Block
-                company={'AIU'}
-                title={'Frontend developer'}
-                date={'March 2022 - December 2023'}
-                text={'Last year, I delved into various stacks and libraries such as Next.js, Vue, Electron, Redux Toolkit, React-Select, React-Query and others. I have completed numerous projects using these technologies.'}
-                skills={['Next.js', 'Redux', 'Vue 3']}
+                skills={['TypeScript', 'Python', 'Docker']}
             />
         </div>
     )

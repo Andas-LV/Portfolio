@@ -1,4 +1,9 @@
-import { SiTypescript, SiJavascript, SiReact, SiVuedotjs, SiNextdotjs } from "react-icons/si";
+import {
+    SiTypescript, SiJavascript,
+    SiReact, SiVuedotjs,
+    SiNextdotjs, SiPython,
+    SiDjango, SiNodedotjs
+} from "react-icons/si";
 import Slider from "@/app/components/Slider";
 
 
@@ -24,14 +29,29 @@ export const Stacks = () => {
                 <Slider skill={"React"} level={90} />
             </div>
 
+            <div className={`${styles.skillBlock} ${styles.white}`}>
+                <SiNextdotjs className={styles.icon} />
+                <Slider skill={"Next.js"} level={100} />
+            </div>
+
             <div className={`${styles.skillBlock} ${styles.green}`}>
                 <SiVuedotjs className={styles.icon} />
                 <Slider skill={"Vue.js"} level={100} />
             </div>
 
-            <div className={`${styles.skillBlock} ${styles.black}`}>
-                <SiNextdotjs className={styles.icon} />
-                <Slider skill={"Next.js"} level={80} />
+            <div className={`${styles.skillBlock} ${styles.green}`}>
+                <SiNodedotjs className={styles.icon} />
+                <Slider skill={"Node.js"} level={80} />
+            </div>
+
+            <div className={`${styles.skillBlock} ${styles.white}`}>
+                <SiPython className={styles.icon} />
+                <Slider skill={"Python"} level={70} />
+            </div>
+
+            <div className={`${styles.skillBlock} ${styles.lightBlue}`}>
+                <SiDjango className={styles.icon} />
+                <Slider skill={"Django REST"} level={80} />
             </div>
         </div>
     )
