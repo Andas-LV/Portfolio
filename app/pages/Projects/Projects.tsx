@@ -31,19 +31,20 @@ export const Projects: React.FC = () => {
     return (
         <div className={styles.container}>
             <h2>Projects</h2>
+
             <ProjectBlock
-                title="Qorgau"
-                imgPath="/qorgau.png"
-                linkPath="https://qorgau-city.kz/map/"
-                github="NDA"
-                description="This is a Fire resistance project. I used a stacks like Vue js, Pinia, Nuxt js, Vuetify, google_map and etc."
+                title="Crystal Auto(HAVAL)"
+                imgPath="/haval.png"
+                linkPath="https://www.carastana.com/"
+                github="https://github.com/Andas-LV/crystal_auto.git"
+                description="That was pretty simple project with interesting stacks as Next.js, Zustand, Zod etc."
             />
 
             <ProjectBlock
-                title="Simple-Design"
-                imgPath="/simple-design.png"
-                linkPath="https://simple-design-one.vercel.app/"
-                github="https://github.com/Andas-LV/simple-design.git"
+                title="Any Parts"
+                imgPath="/AnyParts.png"
+                linkPath="https://any-parts.vercel.app/"
+                github="https://github.com/Andas-LV/any_parts.git"
                 description="I found some good layout desing in the internet.
                 I think I can use them for my big project.
                 I am proud of my work. I have made it a habit that with every new project. I wil also learn and immediately aplly a new stack.
@@ -51,11 +52,11 @@ export const Projects: React.FC = () => {
             />
 
             <ProjectBlock
-                title="Travellian"
-                imgPath="/travellian.png"
-                linkPath="https://travel-agency-five-iota.vercel.app/"
-                github="https://github.com/Andas-LV/Travel-Agency"
-                description="That was a pretty simple project in perspective of the size and like a said, i used a new stack. In this case this is Next js and Next-Auth."
+                title="Qorgau"
+                imgPath="/qorgau.png"
+                linkPath="https://qorgau-city.kz/map/"
+                github="NDA"
+                description="This is a Fire resistance project. I used a stacks like Vue js, Pinia, Nuxt js, Vuetify, google_map and etc."
             />
         </div>
     );
