@@ -824,3 +824,25 @@
   .skillsGrid { grid-template-columns: 1fr; }
   .heroCtas a { flex: 1 1 100%; justify-content: center; }
 }
+
+/* CV buttons */
+.navCv {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.navCv:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.cvBtn {
+  margin-top: 16px;
+}

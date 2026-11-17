@@ -1,6 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { FiDownload } from 'react-icons/fi'
+import { cvFile } from '@/app/data/content'
 import { useLang } from './LangProvider'
 import s from './home.module.css'
 
@@ -55,6 +57,9 @@ export function Nav() {
                 </nav>
 
                 <div className={s.navRight}>
+                    <a className={s.navCv} href={cvFile} download>
+                        <FiDownload /> CV
+                    </a>
                     <div className={s.langSwitch} role="group" aria-label="Language">
                         {(['ru', 'en'] as const).map(l => (
                             <button

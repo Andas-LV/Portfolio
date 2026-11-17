@@ -6,6 +6,8 @@ export const contacts = {
     github: { label: 'Andas-LV', href: 'https://github.com/Andas-LV' },
 }
 
+export const cvFile = '/Andas_Satybaldy_CV.pdf'
+
 export const heroStack = ['React', 'Next.js', 'NestJS', 'C# / .NET', 'PostgreSQL']
 
 export const skills: { key: string; items: string[] }[] = [
@@ -37,6 +39,7 @@ type Project = {
     image?: string
     link?: string
     github?: string
+    githubBackend?: string
 }
 
 type Dict = {
@@ -48,11 +51,12 @@ type Dict = {
         lead: string
         ctaPrimary: string
         ctaSecondary: string
+        cv: string
     }
     about: { title: string; text: string[]; stats: { value: string; label: string }[] }
     experience: { title: string; now: string; jobs: Job[] }
     skills: { title: string; groups: Record<string, string> }
-    projects: { title: string; nda: string; live: string; code: string; items: Project[] }
+    projects: { title: string; nda: string; live: string; code: string; codeFront: string; codeBack: string; items: Project[] }
     contactsSection: {
         title: string
         text: string
@@ -79,6 +83,7 @@ export const content: Record<Lang, Dict> = {
             lead: 'Почти 4 года коммерческой разработки. Веду задачу целиком — от базы данных и API до интерфейса.',
             ctaPrimary: 'Написать в Telegram',
             ctaSecondary: 'Смотреть опыт',
+            cv: 'Скачать CV',
         },
         about: {
             title: 'Обо мне',
@@ -154,6 +159,8 @@ export const content: Record<Lang, Dict> = {
             nda: 'NDA',
             live: 'Открыть сайт',
             code: 'GitHub',
+            codeFront: 'Frontend',
+            codeBack: 'Backend',
             items: [
                 {
                     title: 'Платформа ж/д логистики КТТ',
@@ -165,28 +172,30 @@ export const content: Record<Lang, Dict> = {
                 {
                     title: 'Crystal Auto (Haval)',
                     tag: 'ZIZ INC.',
-                    description: 'Сайт официального дилера Haval в Астане.',
+                    description: 'Сайт официального дилера Haval в Астане: модельный ряд, акции и цены, заявки на консультацию, версии на русском и казахском.',
                     stack: ['Next.js', 'Zustand', 'Zod'],
-                    image: '/haval.png',
-                    link: 'https://www.carastana.com/',
+                    image: '/projects/haval.png',
+                    link: 'https://haval.mycarastana.kz/ru/',
                     github: 'https://github.com/Andas-LV/crystal_auto',
                 },
                 {
-                    title: 'Any Parts',
-                    tag: 'Pet-проект',
-                    description: 'Маркетплейс запчастей для авто, мото и спецтехники. Проект, на котором осваивал Node.js и экосистему React.',
-                    stack: ['React', 'Node.js'],
-                    image: '/AnyParts.png',
-                    link: 'https://any-parts.vercel.app/',
-                    github: 'https://github.com/Andas-LV/any_parts',
+                    title: 'Coder',
+                    tag: 'Pet-проект · AI',
+                    description:
+                        'Платформа для работы с ИИ-моделями в одном интерфейсе: множественные чаты с Gemini, DeepSeek и Llama, помощь с кодом, история чатов, вход по QR-коду и real-time обновления через WebSocket.',
+                    stack: ['Next.js 15', 'React 19', 'Node.js', 'Express', 'Prisma', 'Socket.IO', 'Zustand'],
+                    image: '/projects/coder.png',
+                    link: 'https://coder-front.vercel.app/',
+                    github: 'https://github.com/Andas-LV/coder-front',
+                    githubBackend: 'https://github.com/Andas-LV/coder-backend',
                 },
                 {
                     title: 'Qorgau',
-                    tag: 'Пожарная безопасность',
-                    description: 'Городская система пожарной безопасности с интерактивной картой объектов.',
-                    stack: ['Vue', 'Nuxt', 'Pinia', 'Vuetify', 'Google Maps'],
-                    image: '/qorgau.png',
-                    link: 'https://qorgau-city.kz/map/',
+                    tag: 'Огнезащита',
+                    description: 'Сайт казахстанского производителя огнезащитных красок: каталог продукции, калькулятор ПТМ (приведённой толщины металла), личный кабинет и три языка — RU / KK / EN.',
+                    stack: ['Next.js', 'TypeScript', 'i18n'],
+                    image: '/projects/qorgau.png',
+                    link: 'https://qorgau.kz/',
                 },
             ],
         },
@@ -214,6 +223,7 @@ export const content: Record<Lang, Dict> = {
             lead: 'Almost 4 years of commercial development. I own features end to end — from the database and API to the UI.',
             ctaPrimary: 'Message on Telegram',
             ctaSecondary: 'See experience',
+            cv: 'Download CV',
         },
         about: {
             title: 'About',
@@ -289,6 +299,8 @@ export const content: Record<Lang, Dict> = {
             nda: 'NDA',
             live: 'Live site',
             code: 'GitHub',
+            codeFront: 'Frontend',
+            codeBack: 'Backend',
             items: [
                 {
                     title: 'KTT railway logistics platform',
@@ -300,28 +312,30 @@ export const content: Record<Lang, Dict> = {
                 {
                     title: 'Crystal Auto (Haval)',
                     tag: 'ZIZ INC.',
-                    description: 'Website of the official Haval dealer in Astana.',
+                    description: 'Website of the official Haval dealer in Astana: model range, offers and prices, consultation requests, Russian and Kazakh versions.',
                     stack: ['Next.js', 'Zustand', 'Zod'],
-                    image: '/haval.png',
-                    link: 'https://www.carastana.com/',
+                    image: '/projects/haval.png',
+                    link: 'https://haval.mycarastana.kz/ru/',
                     github: 'https://github.com/Andas-LV/crystal_auto',
                 },
                 {
-                    title: 'Any Parts',
-                    tag: 'Pet project',
-                    description: 'Marketplace of parts for cars, motorbikes and other vehicles. The project where I picked up Node.js and the React ecosystem.',
-                    stack: ['React', 'Node.js'],
-                    image: '/AnyParts.png',
-                    link: 'https://any-parts.vercel.app/',
-                    github: 'https://github.com/Andas-LV/any_parts',
+                    title: 'Coder',
+                    tag: 'Pet project · AI',
+                    description:
+                        'A platform for working with AI models in one interface: multiple chats with Gemini, DeepSeek and Llama, coding help, chat history, QR-code login and real-time updates over WebSocket.',
+                    stack: ['Next.js 15', 'React 19', 'Node.js', 'Express', 'Prisma', 'Socket.IO', 'Zustand'],
+                    image: '/projects/coder.png',
+                    link: 'https://coder-front.vercel.app/',
+                    github: 'https://github.com/Andas-LV/coder-front',
+                    githubBackend: 'https://github.com/Andas-LV/coder-backend',
                 },
                 {
                     title: 'Qorgau',
-                    tag: 'Fire safety',
-                    description: 'City fire safety system with an interactive map of facilities.',
-                    stack: ['Vue', 'Nuxt', 'Pinia', 'Vuetify', 'Google Maps'],
-                    image: '/qorgau.png',
-                    link: 'https://qorgau-city.kz/map/',
+                    tag: 'Fire protection',
+                    description: 'Website of a Kazakh manufacturer of fire-retardant paints: product catalog, section factor (ПТМ) calculator, personal account and three languages — RU / KK / EN.',
+                    stack: ['Next.js', 'TypeScript', 'i18n'],
+                    image: '/projects/qorgau.png',
+                    link: 'https://qorgau.kz/',
                 },
             ],
         },

@@ -3,8 +3,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { SiGithub, SiGmail, SiTelegram } from 'react-icons/si'
-import { FiArrowUpRight, FiArrowDown, FiCopy, FiCheck, FiLock, FiMapPin, FiBookOpen, FiGlobe } from 'react-icons/fi'
-import { contacts, heroStack, skills } from '@/app/data/content'
+import { FiArrowUpRight, FiCopy, FiCheck, FiLock, FiMapPin, FiBookOpen, FiGlobe, FiDownload } from 'react-icons/fi'
+import { contacts, cvFile, heroStack, skills } from '@/app/data/content'
 import { useLang } from './LangProvider'
 import { Reveal } from './Reveal'
 import s from './home.module.css'
@@ -52,8 +52,8 @@ export function Hero() {
                         <a className={s.btnPrimary} href={contacts.telegram.href} target="_blank" rel="noopener noreferrer">
                             <SiTelegram /> {t.hero.ctaPrimary}
                         </a>
-                        <a className={s.btnGhost} href="#experience">
-                            {t.hero.ctaSecondary} <FiArrowDown />
+                        <a className={s.btnGhost} href={cvFile} download>
+                            <FiDownload /> {t.hero.cv}
                         </a>
                     </div>
                 </div>
@@ -201,7 +201,12 @@ export function Projects() {
                                     )}
                                     {p.github && (
                                         <a href={p.github} target="_blank" rel="noopener noreferrer">
-                                            <SiGithub /> {t.projects.code}
+                                            <SiGithub /> {p.githubBackend ? t.projects.codeFront : t.projects.code}
+                                        </a>
+                                    )}
+                                    {p.githubBackend && (
+                                        <a href={p.githubBackend} target="_blank" rel="noopener noreferrer">
+                                            <SiGithub /> {t.projects.codeBack}
                                         </a>
                                     )}
                                 </div>
@@ -257,6 +262,9 @@ export function Contacts() {
                         <ContactRow icon={<SiGmail />} name="Email" {...contacts.email} />
                         <ContactRow icon={<SiGithub />} name="GitHub" {...contacts.github} />
                     </div>
+                    <a className={`${s.btnPrimary} ${s.cvBtn}`} href={cvFile} download>
+                        <FiDownload /> {t.hero.cv} · PDF
+                    </a>
                 </Reveal>
                 <Reveal delay={100} className={s.infoList}>
                     <div className={s.info}>
