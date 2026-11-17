@@ -170,13 +170,12 @@ export const content: Record<Lang, Dict> = {
                     stack: ['C# / .NET', 'PostgreSQL', 'Hangfire', 'React', 'NCALayer'],
                 },
                 {
-                    title: 'Crystal Auto (Haval)',
+                    title: 'Haval Mycarastana',
                     tag: 'ZIZ INC.',
                     description: 'Сайт официального дилера Haval в Астане: модельный ряд, акции и цены, заявки на консультацию, версии на русском и казахском.',
                     stack: ['Next.js', 'Zustand', 'Zod'],
                     image: '/projects/haval.png',
                     link: 'https://haval.mycarastana.kz/ru/',
-                    github: 'https://github.com/Andas-LV/crystal_auto',
                 },
                 {
                     title: 'Coder',
@@ -310,13 +309,12 @@ export const content: Record<Lang, Dict> = {
                     stack: ['C# / .NET', 'PostgreSQL', 'Hangfire', 'React', 'NCALayer'],
                 },
                 {
-                    title: 'Crystal Auto (Haval)',
+                    title: 'Haval Mycarastana',
                     tag: 'ZIZ INC.',
                     description: 'Website of the official Haval dealer in Astana: model range, offers and prices, consultation requests, Russian and Kazakh versions.',
                     stack: ['Next.js', 'Zustand', 'Zod'],
                     image: '/projects/haval.png',
                     link: 'https://haval.mycarastana.kz/ru/',
-                    github: 'https://github.com/Andas-LV/crystal_auto',
                 },
                 {
                     title: 'Coder',
