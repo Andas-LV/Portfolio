@@ -8,7 +8,7 @@ export const contacts = {
 
 export const cvFile = '/Andas_Satybaldy_CV.pdf'
 
-export const heroStack = ['React', 'Next.js', 'NestJS', 'C# / .NET', 'PostgreSQL']
+export const heroStack = ['React', 'Next.js', 'Vue', 'NestJS', 'C# / .NET', 'PostgreSQL']
 
 export const skills: { key: string; items: string[] }[] = [
     { key: 'languages', items: ['TypeScript', 'JavaScript', 'C#', 'Python', 'Java'] },
@@ -79,7 +79,7 @@ export const content: Record<Lang, Dict> = {
         hero: {
             badge: 'Сейчас в Smart System Technologies',
             name: 'Андас Сатыбалды',
-            role: 'Team Lead · Fullstack разработчик',
+            role: 'Senior Fullstack разработчик',
             lead: 'Почти 4 года коммерческой разработки. Веду задачу целиком — от базы данных и API до интерфейса.',
             ctaPrimary: 'Написать в Telegram',
             ctaSecondary: 'Смотреть опыт',
@@ -88,8 +88,8 @@ export const content: Record<Lang, Dict> = {
         about: {
             title: 'Обо мне',
             text: [
-                'Fullstack разработчик, сейчас руковожу командой на проекте для ҚазТемірТранс. На бэкенде работаю с NestJS, C# / .NET и Python, на фронтенде — с React, Next.js и TypeScript.',
-                'Делал CRM, SaaS и маркетплейсы, системы с высокой нагрузкой и real-time уведомлениями.',
+                'Fullstack разработчик, сейчас руковожу командой на проекте для ҚазТемірТранс. На бэкенде работаю с NestJS, C# / .NET и Python, на фронтенде — с React, Next.js, Vue и TypeScript.',
+                'Делал CRM, SaaS и маркетплейсы, системы с высокой нагрузкой и real-time приложения.',
             ],
             stats: [
                 { value: '~4', label: 'года коммерческого опыта' },
@@ -218,7 +218,7 @@ export const content: Record<Lang, Dict> = {
         hero: {
             badge: 'Currently at Smart System Technologies',
             name: 'Andas Satybaldy',
-            role: 'Team Lead · Fullstack Developer',
+            role: 'Senior Fullstack Developer',
             lead: 'Almost 4 years of commercial development. I own features end to end — from the database and API to the UI.',
             ctaPrimary: 'Message on Telegram',
             ctaSecondary: 'See experience',
@@ -227,8 +227,8 @@ export const content: Record<Lang, Dict> = {
         about: {
             title: 'About',
             text: [
-                'Fullstack developer, currently leading a team on a project for KazTemirTrans. On the backend I work with NestJS, C# / .NET and Python; on the frontend — React, Next.js and TypeScript.',
-                'I have built CRMs, SaaS products and marketplaces, high-load systems and real-time notifications.',
+                'Fullstack developer, currently leading a team on a project for KazTemirTrans. On the backend I work with NestJS, C# / .NET and Python; on the frontend — React, Next.js, Vue and TypeScript.',
+                'I have built CRMs, SaaS products and marketplaces, high-load systems and real-time applications.',
             ],
             stats: [
                 { value: '~4', label: 'years of commercial experience' },

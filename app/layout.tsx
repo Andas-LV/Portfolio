@@ -8,12 +8,12 @@ const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-sans', d
 const mono = JetBrains_Mono({ subsets: ['latin', 'cyrillic'], variable: '--font-mono', display: 'swap' })
 
 export const metadata: Metadata = {
-    title: 'Андас Сатыбалды — Team Lead · Fullstack разработчик',
+    title: 'Андас Сатыбалды — Senior Fullstack разработчик',
     description:
-        'Fullstack разработчик и Team Lead: React, Next.js, NestJS, C# / .NET, PostgreSQL. CRM, SaaS, маркетплейсы и высоконагруженные системы.',
+        'Senior Fullstack разработчик: React, Next.js, Vue, NestJS, C# / .NET, PostgreSQL. CRM, SaaS, маркетплейсы и высоконагруженные системы.',
     openGraph: {
-        title: 'Андас Сатыбалды — Team Lead · Fullstack',
-        description: 'React · Next.js · NestJS · C# / .NET · PostgreSQL',
+        title: 'Андас Сатыбалды — Senior Fullstack',
+        description: 'React · Next.js · Vue · NestJS · C# / .NET · PostgreSQL',
         type: 'website',
     },
 }
